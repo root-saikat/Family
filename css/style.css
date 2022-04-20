@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	display: grid;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+	background-image: url(../images/bgd.jpg);
+	background-size: cover;
+}
+
+.tree {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.tree ul {
+	padding-top: 40px;
+	/* position: relative; */
+	transition: .5s;
+	display: flex;
+	flex-direction: column;
+}
+.tree li {
+	/* display: inline-table; */
+	text-align: center;
+	list-style-type: none;
+	/* position: relative; */
+	padding-top: 20px;
+	padding-bottom: 3px;
+	transition: .5s;
+}
+.p{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	/* padding-top: 40px; */
+}
+
+ 
+.tree li a {
+	border: 1px solid #ccc;
+	padding: 10px;
+	display: inline-grid;
+	border-radius: 5px;
+	text-decoration-line: none;
+	border-radius: 5px;
+	transition: .5s;
+}
+.tree li a img {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 10px !important;
+	border-radius: 5px;
+	margin: auto;
+}
+.tree li a span {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #ffffff;
+	padding: 8px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+
+
+.gp {
+    display: flex;
+    justify-content: space-between;
+	padding: 0 20%;
+}
+
+li.us {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25%;
+}
+
+.p{
+position: relative;
+}
+.i::before{
+	content: '';
+    position: absolute;
+    /* top: 0; */
+    right: 57%;
+    border-top: 1px solid #ccc;
+    width: 16%;
+    /* height: 50px; */
+}
+.i::after{
+	content: '';
+    position: absolute;
+    /* top: 0; */
+	bottom: 0;
+    right: 28%;
+    border-top: 1px solid #ccc;
+    width: 44%;
+}
+.ii::before{
+	content:'';
+	position: absolute;
+	left: 57%;
+	border-top: 1px solid #ccc;
+	width: 16%;
+}
+.gp{
+	position: relative;
+}
+.one::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 20%;
+	border-bottom: 1px solid #ccc;
+	width: 15%;
+}
+.one{
+	padding-bottom: 5px;
+}
+.two::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 20%;
+	border-bottom: 1px solid #ccc;
+	width: 15%;
+}
+
+.us{
+	position: relative;
+}
+.usa::before{
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 28%;
+    border-left: 1px solid #ccc;
+    width: 0;
+    height: 20px;
+}
+.usb::before{
+	content: '';
+    position: absolute;
+    top: 0;
+    right: 28%;
+    border-left: 1px solid #ccc;
+    width: 0;
+    height: 20px;
+}
+.puldv{
+	position: relative;
+}
+.pul::after{
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 27%;
+    border-left: 1px solid #ccc;
+    height: 19%;
+}
+.pul::before{
+	content: '';
+    position: absolute;
+    top: 0;
+    right: 27%;
+    border-right: 1px solid #ccc;
+    height: 19%;
+}
+.nm::before{
+	content: 'Family Tree';
+	font-size: 45px;
+	text-shadow: 0px 2px 4px #000;
+	color: green;
+    position: absolute;
+    top: 10px;
+    right: 41%;
+}
+/*Hover-Section*/
+
+
+@media screen and (max-width:450px) {
+
+	.nm::before {
+		content: 'Family Tree';
+		font-size: 45px;
+		text-shadow: 0px 2px 4px #000;
+		color: green;
+		position: absolute;
+		top: 10px;
+		right: 20%;
+	}
+	body{
+		background-image: url(../images/bgm.jpg);
+		background-size: cover;
+	}
+	.one::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 24%;
+		border-bottom: 1px solid #ccc;
+		width: 22%;
+	}
+	.two::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 24%;
+		border-bottom: 1px solid #ccc;
+		width: 22%;
+	}
+	.pul::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 35%;
+		border-right: 1px solid #ccc;
+		height: 16%;
+	}
+	.pul::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 35%;
+		border-left: 1px solid #ccc;
+		height: 16%;
+	}
+	.ii::before{
+		content: none;
+	}
+	.i::before{
+		content: none;
+	}
+	
+}
